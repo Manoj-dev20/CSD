@@ -1,0 +1,339 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fffbf2;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fffbf2;
+}
+
+.logo img {
+    height: 160px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #b14ec7;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20%;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.yellow-divider {
+    height: 3px;
+    background-color: #ffe566;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 40px 10%;
+}
+
+.achievements h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.yellow-underline {
+    height: 8px;
+    background-color: #ffe566;
+    width: 150px;
+    margin: 0 auto 50px;
+    border-radius: 4px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.achievement-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #666;
+    width: 100%;
+}
+
+.location-tag p {
+    margin: 2px 0;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #ffeeb2 0%, #ffc0cb 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.competition-header {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.competition-header h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.competition-header h6 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.competition-header p {
+    font-size: 0.8rem;
+    margin: 2px 0;
+}
+
+.card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.btn-yellow {
+    background-color: #ffe566;
+    color: #333;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-yellow:hover {
+    background-color: #ffd700;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 60px 10% 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-support {
+    width: 23%;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+footer p,
+footer li {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Animation Classes */
+.animate-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-element.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-support {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px 10px;
+    }
+    
+    .hero {
+        padding: 40px 10%;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-support {
+        width: 100%;
+    }
+}
