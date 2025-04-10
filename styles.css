@@ -562,10 +562,12 @@ footer {
     
     nav ul {
         margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     nav ul li {
-        margin: 0 10px;
+        margin: 0 15px 10px;
     }
     
     .hero {
